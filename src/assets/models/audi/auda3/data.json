@@ -1,0 +1,36 @@
+{
+  "name": "Audi A3",
+  "id": "auda3",
+  "version": "",
+  "year": 1996,
+  "engine": {
+    "displacement": 1.8,
+    "type": "I4",
+    "power": 148,
+    "torque": 20.9
+  },
+  "dimensions": {
+    "length": 4152,
+    "height": 1427,
+    "width": 1735,
+    "weight": 1145
+  },
+  "price": "34.130",
+  "drivetrain": "ff",
+  "colours": {
+    "Casablanca White": "#C0C0B0",
+    "Aluminium Silver Metallic": "#989898",
+    "Volcano Black Pearl Effect": "#202020",
+    "Brilliant Black": "#181818",
+    "Laser Red": "#780800",
+    "Autumn Red Metallic": "#600000",
+    "Hibiscus Red Pearl Effect": "#400810",
+    "Mocha Brown Pearl Effect": "#403008",
+    "Ochre Metallic": "#A09000",
+    "Paradise Green Pearl Effect": "#386838",
+    "Cactus Green Pearl Effect": "#002818",
+    "Cornflower Blue": "#181850",
+    "Azure Blue Pearl Effect": "#282840",
+    "Ming Blue Pearl Effect": "#181828"
+  }
+}

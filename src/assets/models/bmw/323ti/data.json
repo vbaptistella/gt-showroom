@@ -1,0 +1,36 @@
+{
+  "name": "BMW 323ti Compact",
+  "id": "323ti",
+  "version": "",
+  "year": 1999,
+  "engine": {
+    "displacement": 2.5,
+    "type": "I6",
+    "power": 165,
+    "torque": 24.5
+  },
+  "dimensions": {
+    "length": 4210,
+    "height": 1378,
+    "width": 1698,
+    "weight": 1330
+  },
+  "price": "52.890",
+  "drivetrain": "fr",
+  "colours": {
+    "Alpinweiss": "#C8C8B8",
+    "Titansilber Metallic": "#A8A8A8",
+    "Cosmosschwarz Metallic": "#404040",
+    "Schwarz": "#202020",
+    "Bronzit Metallic": "#786020",
+    "Hellrot": "#900810",
+    "Sienarot Metallic": "#380808",
+    "Türkis Metallic": "#789078",
+    "Farngrün Metallic": "#183018",
+    "Ascotgrün Metallic": "#284838",
+    "Stahlblau Metallic": "#606068",
+    "Avusblau": "#384060",
+    "Dankeblau": "#080838",
+    "Montrealblau": "#100828"
+  }
+}

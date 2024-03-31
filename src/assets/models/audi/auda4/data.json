@@ -1,0 +1,36 @@
+{
+  "name": "Audi A4",
+  "id": "auda4",
+  "version": "",
+  "year": 1998,
+  "engine": {
+    "displacement": 2.8,
+    "type": "V6",
+    "power": 191,
+    "torque": 28.0
+  },
+  "dimensions": {
+    "length": 4479,
+    "height": 1417,
+    "width": 1733,
+    "weight": 1430
+  },
+  "price": "50.530",
+  "drivetrain": "fa",
+  "colours": {
+    "Casablanca White": "#C8C8B8",
+    "Aluminium Silver Metallic": "#A0A0A0",
+    "Quartz Gray Metallic": "#707070",
+    "Brilliant Black with Clear Lacquer": "#181818",
+    "Mocha Brown Pearl Effect": "#483808",
+    "Volcano Black Pearl Effect": "#282828",
+    "Laser Red": "#801000",
+    "Autumn Red Metallic": "#680800",
+    "Hibiscus Red Pearl Effect": "#481018",
+    "Paradise Green Metallic": "#588850",
+    "Cactus Green Pearl Effect": "#003020",
+    "Azure Blue Pearl Effect": "#303048",
+    "Ming Blue Pearl Effect": "#282830",
+    "Velvet Blue": "#181828"
+  }
+}

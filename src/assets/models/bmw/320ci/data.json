@@ -1,0 +1,37 @@
+{
+  "name": "BMW 320Ci",
+  "id": "320ci",
+  "version": "",
+  "year": 1999,
+  "engine": {
+    "displacement": 2.0,
+    "type": "I6",
+    "power": 145,
+    "torque": 24.5
+  },
+  "dimensions": {
+    "length": 4488,
+    "height": 1369,
+    "width": 1757,
+    "weight": 1440
+  },
+  "price": "41.800",
+  "drivetrain": "fr",
+  "colours": {
+    "Alpine White": "#C0C0B0",
+    "Titanium Silver Metallic": "#A0A8A8",
+    "Steel Gray Metallic": "#586060",
+    "Cosmos Black Metallic": "#404848",
+    "Black": "#202020",
+    "Bright Red": "#901018",
+    "Brick Red": "#502828",
+    "Sienna Red Metallic": "#381810",
+    "Light Yellow Metallic": "#908038",
+    "Sea Green Metallic": "#285850",
+    "Fern Green Metallic": "#183020",
+    "Topaz Blue": "#283850",
+    "Steel Blue Metallic": "#586068",
+    "Orient Blue Metallic": "#182038",
+    "Dark Blue": "#101038"
+  }
+}

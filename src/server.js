@@ -31,12 +31,17 @@ app.get("/vehicles/:brand", (req, res) => {
   const vehicles = [];
 
   carFolders.forEach((carFolder) => {
-    const carData = fs.readFileSync(
-      `./src/assets/models/${brand}/${carFolder}/data.json`,
-      { encoding: "utf8", flag: "r" }
-    );
-    vehicles.push(JSON.parse(carData));
-    console.log(carData);
+    let carData;
+    try {
+      carData = fs.readFileSync(
+        `./src/assets/models/${brand}/${carFolder}/data.json`,
+        { encoding: "utf8", flag: "r" }
+      );
+      vehicles.push(JSON.parse(carData));
+      console.log(carData);
+    } catch {
+      console.error("file doesn't exist");
+    }
   });
 
   res.send(vehicles).status(200);

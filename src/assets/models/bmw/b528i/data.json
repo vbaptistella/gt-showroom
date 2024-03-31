@@ -1,0 +1,37 @@
+{
+  "name": "BMW 528i",
+  "id": "b528i",
+  "version": "",
+  "year": 1999,
+  "engine": {
+    "displacement": 2.8,
+    "type": "I6",
+    "power": 138,
+    "torque": 28.0
+  },
+  "dimensions": {
+    "length": 4775,
+    "height": 1435,
+    "width": 1800,
+    "weight": 1575
+  },
+  "price": "61.500",
+  "drivetrain": "fr",
+  "colours": {
+    "Alpine White": "#C0C0B0",
+    "Titanium Silver Metallic": "#B0B0B0",
+    "Aspen Silver Metallic": "#989898",
+    "Cosmos Black Metallic": "#404040",
+    "Jet Black": "#202020",
+    "Sahara Beige Metallic": "#B0A888",
+    "Siena Red Metallic": "#381010",
+    "Royal Red Metallic": "#200808",
+    "Glacier Green Metallic": "#98A898",
+    "Vermont Green Metallic": "#183018",
+    "Oxford Green Metallic": "#102810",
+    "Anthracite Metallic": "#383848",
+    "Orient Blue Metallic": "#202038",
+    "Dark Blue": "#080830",
+    "Biarritz Blue Metallic": "#183048"
+  }
+}
