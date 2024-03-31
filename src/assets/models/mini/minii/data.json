@@ -1,0 +1,35 @@
+{
+  "name": "Mini Cooper",
+  "id": "minii",
+  "version": "1.3i",
+  "year": 1997,
+  "engine": {
+    "displacement": 1271,
+    "type": "I4",
+    "power": 61,
+    "torque": 9.6
+  },
+  "dimensions": {
+    "length": 3050,
+    "height": 1350,
+    "width": 1410,
+    "weight": 720
+  },
+  "price": "16.830",
+  "drivetrain": "ff",
+  "model": "mini/min_cpr_13i",
+  "colours": {
+    "White Diamond": "#c8c8b9",
+    "Platinum Silver Metallic": "#a0a0a0",
+    "Anthracite Metallic": "#202020",
+    "Nightfire Red Metallic": "#7e1d1c",
+    "Flame Red Solid": "#951218",
+    "Volcano Metallic": "#a53512",
+    "Almond Green Metallic": "#346842",
+    "British Racing Green Metallic": "#224031",
+    "Hawaiian Blue Metallic": "#36a9a0",
+    "Surf Blue Metallic": "#289197",
+    "Tahiti Blue Metallic": "#21215e",
+    "Amaranth Metallic": "#571866"
+  }
+}

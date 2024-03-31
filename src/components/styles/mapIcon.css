@@ -1,0 +1,41 @@
+.map-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  & p {
+    margin: 5px;
+  }
+  position: absolute;
+}
+
+.district {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: #fff;
+  font-size: 64px;
+  &.it {
+    background: linear-gradient(
+      90deg,
+      #1b8d49 33%,
+      #f7f7f7 33%,
+      #f7f7f7 66%,
+      #c42439 66%
+    );
+  }
+  &.fr {
+    background: linear-gradient(
+      90deg,
+      #04264f 33%,
+      #f7f7f7 33%,
+      #f7f7f7 66%,
+      #c4002b 66%
+    );
+  }
+}

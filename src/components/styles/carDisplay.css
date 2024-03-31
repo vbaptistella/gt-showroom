@@ -1,0 +1,28 @@
+model-viewer {
+  max-width: 1200px;
+  width: 90vw;
+  max-height: 675px;
+  height: 75vh;
+}
+
+.car-viewer-data {
+  position: absolute;
+  left: 250px;
+  top: 260px;
+}
+
+.car-colours {
+  display: flex;
+  flex-direction: column;
+  & button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 5px;
+    border-radius: 50%;
+  }
+}
+
+.car-colour-list {
+    display: flex;
+}

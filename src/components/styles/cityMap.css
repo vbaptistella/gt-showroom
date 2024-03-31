@@ -1,0 +1,19 @@
+#cityMap {
+  display: flex;
+  max-width: 1200px;
+  width: 90vw;
+  max-height: 675px;
+  height: 75vh;
+  background-color: #c2c2c2;
+  /* background-image: url(../../assets/img/citymap_placeholder.png); */
+  border-radius: 15px;
+  position: relative;
+  justify-content: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  place-items: center start;
+  height: 100vh;
+}

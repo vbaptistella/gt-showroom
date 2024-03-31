@@ -1,0 +1,29 @@
+.car-list {
+  list-style: none;
+  width: 100%;
+  padding: 15px 30px;
+  & a {
+    width: fit-content;
+    display: flex;
+  }
+}
+
+.car-item {
+  width: fit-content;
+  background: #fff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.car-thumb {
+  & img {
+    width: 300px;
+  }
+}
+
+.car-data {
+  padding: 0 30px 15px;
+  margin-top: -15px;
+}

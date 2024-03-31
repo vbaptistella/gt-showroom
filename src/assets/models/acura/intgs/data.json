@@ -1,0 +1,30 @@
+{
+  "name": "Acura Integra",
+  "id": "intgs",
+  "version": "GS-R",
+  "year": 1998,
+  "engine": {
+    "displacement": 1797,
+    "power": 169,
+    "torque": 17.7
+  },
+  "dimensions": {
+    "length": 4380,
+    "height": 1338,
+    "width": 1710,
+    "weight": 1210
+  },
+  "price": "23.260",
+  "drivetrain": "ff",
+  "colours": {
+    "Frost White": "#B8B8B8",
+    "Citrus Silver Metallic": "#909080",
+    "Vogue Silver Metallic": "#909090",
+    "Black Currant Pearl": "#100801",
+    "Granada Black Pearl": "#181818",
+    "Milan Red": "#850010",
+    "Matador Red Pearl": "#370f11",
+    "Cypress Green Pearl": "#0a2812",
+    "Adriatic Blue Pearl": "#111837"
+  }
+}

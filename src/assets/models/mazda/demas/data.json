@@ -1,0 +1,23 @@
+{
+  "name": "Mazda DEMIO",
+  "id": "demas",
+  "version": "A-Spec",
+  "year": 1997,
+  "engine": {
+    "displacement": 1500,
+    "type": "I4",
+    "power": 99,
+    "torque": 12.7
+  },
+  "dimensions": {
+    "length": 3800,
+    "height": 1535,
+    "width": 1670,
+    "weight": 820
+  },
+  "price": "-",
+  "drivetrain": "ff",
+  "colours": {
+    "Silver Stone Metallic": "#a0a0a0"
+  }
+}

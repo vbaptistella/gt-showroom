@@ -1,0 +1,30 @@
+{
+  "name": "Ford Puma",
+  "id": "pumaz",
+  "version": "1.7 Zetec-SE VCT",
+  "year": 1999,
+  "engine": {
+    "displacement": 1679,
+    "type": "I4",
+    "power": 123,
+    "torque": 16.0
+  },
+  "dimensions": {
+    "length": 3984,
+    "height": 1345,
+    "width": 1674,
+    "weight": 1034
+  },
+  "price": "27.710",
+  "drivetrain": "ff",
+  "model": "ford/for_pum_zse",
+  "colours": {
+    "Moondust Silver Metallic": "#a0a0a0",
+    "Panther Black Metallic": "#202020",
+    "Radiant Red Solid": "#850016",
+    "Electric Green Metallic": "#1d9839",
+    "Pacific Green Metallic": "#0f6049",
+    "Melina Blue Metallic": "#21295e",
+    "Thistle Metallic": "#37102f"
+  }
+}

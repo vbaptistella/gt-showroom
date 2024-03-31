@@ -1,0 +1,29 @@
+#districtMap {
+    display: flex;
+    max-width: 1200px;
+    width: 90vw;
+    max-height: 675px;
+    height: 75vh;
+    background-color: #c2c2c2;
+    border-radius: 15px;
+    position: relative;
+    &.us {
+        background-image: url(../../assets/img/mapus_placeholder.png);
+    }
+    &.fr {
+        background-image: url(../../assets/img/mapfr_placeholder.png);
+    }
+    &.it {
+        background-image: url(../../assets/img/mapit_placeholder.png);
+    }
+    &.uk {
+        background-image: url(../../assets/img/mapuk_placeholder.png);
+    }
+    &.de {
+        background-image: url(../../assets/img/mapde_placeholder.png);
+    }
+    &.jp {
+        background-image: url(../../assets/img/mapjp_placeholder.png);
+    }
+  }
+  

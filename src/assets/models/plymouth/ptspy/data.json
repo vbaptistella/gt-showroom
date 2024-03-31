@@ -1,0 +1,23 @@
+{
+  "name": "Plymouth PT Spyder",
+  "id": "ptspy",
+  "version": "",
+  "year": 1999,
+  "engine": {
+    "displacement": 2.4,
+    "type": "I4",
+    "power": 221,
+    "torque": 30.0
+  },
+  "dimensions": {
+    "length": 3962,
+    "height": 1224,
+    "width": 1753,
+    "weight": 1225
+  },
+  "price": "-",
+  "drivetrain": "mr",
+  "colours": {
+    "Silver Zinc Metallic": "#808071"
+  }
+}
