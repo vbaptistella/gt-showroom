@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# gt2 files
+gt2-cars
+gt2-vol
