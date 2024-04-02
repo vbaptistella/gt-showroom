@@ -4,7 +4,7 @@
   "version": "",
   "year": 1999,
   "engine": {
-    "displacement": 2.4,
+    "displacement": "2.4",
     "type": "I4",
     "power": 221,
     "torque": 30.0
@@ -17,7 +17,6 @@
   },
   "price": "-",
   "drivetrain": "mr",
-  "colours": {
-    "Silver Zinc Metallic": "#808071"
-  }
+  "defaultColour": 0,
+  "colours": [{ "name": "Silver Zinc Metallic", "hex": "#808071" }]
 }

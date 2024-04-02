@@ -1,0 +1,27 @@
+{
+  "name": "Volkswagen Polo",
+  "type": "road",
+  "id": "polo1",
+  "version": "1.4 16V",
+  "year": 1999,
+  "engine": {
+    "displacement": "1.4",
+    "type": "I4",
+    "power": 98,
+    "torque": 12.8
+  },
+  "dimensions": {
+    "length": 3715,
+    "width": 1655,
+    "height": 1420,
+    "weight": 1025
+  },
+  "price": "22.320",
+  "drivetrain": "ff",
+  "defaultColour": 1,
+  "colours": [
+    { "name": "Satinsilber Metallic", "hex": "#A0A0A0" },
+    { "name": "Flashrot", "hex": "#900818" },
+    { "name": "Black Magic Perleffekt", "hex": "#202020" }
+  ]
+}

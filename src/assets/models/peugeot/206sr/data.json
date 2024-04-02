@@ -1,0 +1,23 @@
+{
+  "name": "Peugeot 206",
+  "id": "206sr",
+  "type": "race",
+  "version": "S16 Race Car",
+  "year": 1999,
+  "engine": {
+    "displacement": "2.0",
+    "type": "I4",
+    "power": 460,
+    "torque": 30.0
+  },
+  "dimensions": {
+    "length": 3835,
+    "height": 1432,
+    "width": 1652,
+    "weight": 1079
+  },
+  "price": "500.000",
+  "drivetrain": "fa",
+  "defaultColour": 0,
+  "colours": [{ "name": "Livery", "livery": ["#b7bbb4", "#262650", "#b7bbb4"] }]
+}

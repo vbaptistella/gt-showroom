@@ -5,8 +5,77 @@
   display: flex;
   padding: 15px 30px;
   height: 80px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid #777;
+  z-index: 1000;
+}
+
+#bgVideo {
+  position: fixed;
+  z-index: 1;
+  filter: blur(2px);
+  opacity: 0.2;
+}
+
+main {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  place-items: center start;
+  position: relative;
+  z-index: 2;
 }
 
 .back-button {
-    display: flex;
+  display: flex;
+  border-radius: 50px 0 0 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 35px;
+  background: linear-gradient(180deg, #1a1a1a 0%, #030205 100%);
+  color: #fff;
+  border: 1px solid rgba(5, 5, 5, 1);
+  position: relative;
+  z-index: 991;
+  &:hover {
+    border: 1px solid rgba(56, 56, 56, 1) 0%;
+  }
+}
+
+.home-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: -25px;
+  background: radial-gradient(
+    circle 130px at center -40px,
+    rgba(67, 127, 166, 1) 0%,
+    rgba(59, 121, 156, 1) 50%,
+    rgba(34, 96, 133, 1) 50%,
+    rgba(30, 72, 108, 1) 100%
+  );
+  border: 1px solid #1e486c;
+  color: #fff;
+  position: relative;
+  z-index: 992;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-stage {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: #fff;
 }

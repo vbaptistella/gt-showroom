@@ -4,7 +4,7 @@
   "version": "",
   "year": 1999,
   "engine": {
-    "displacement": 2.8,
+    "displacement": "2.8",
     "type": "I6",
     "power": 138,
     "torque": 28.0
@@ -17,21 +17,22 @@
   },
   "price": "61.500",
   "drivetrain": "fr",
-  "colours": {
-    "Alpine White": "#C0C0B0",
-    "Titanium Silver Metallic": "#B0B0B0",
-    "Aspen Silver Metallic": "#989898",
-    "Cosmos Black Metallic": "#404040",
-    "Jet Black": "#202020",
-    "Sahara Beige Metallic": "#B0A888",
-    "Siena Red Metallic": "#381010",
-    "Royal Red Metallic": "#200808",
-    "Glacier Green Metallic": "#98A898",
-    "Vermont Green Metallic": "#183018",
-    "Oxford Green Metallic": "#102810",
-    "Anthracite Metallic": "#383848",
-    "Orient Blue Metallic": "#202038",
-    "Dark Blue": "#080830",
-    "Biarritz Blue Metallic": "#183048"
-  }
+  "defaultColour": 14,
+  "colours": [
+    { "name": "Alpine White", "hex": "#C0C0B0" },
+    { "name": "Titanium Silver Metallic", "hex": "#B0B0B0" },
+    { "name": "Aspen Silver Metallic", "hex": "#989898" },
+    { "name": "Cosmos Black Metallic", "hex": "#404040" },
+    { "name": "Jet Black", "hex": "#202020" },
+    { "name": "Sahara Beige Metallic", "hex": "#B0A888" },
+    { "name": "Siena Red Metallic", "hex": "#381010" },
+    { "name": "Royal Red Metallic", "hex": "#200808" },
+    { "name": "Glacier Green Metallic", "hex": "#98A898" },
+    { "name": "Vermont Green Metallic", "hex": "#183018" },
+    { "name": "Oxford Green Metallic", "hex": "#102810" },
+    { "name": "Anthracite Metallic", "hex": "#383848" },
+    { "name": "Orient Blue Metallic", "hex": "#202038" },
+    { "name": "Dark Blue", "hex": "#080830" },
+    { "name": "Biarritz Blue Metallic", "hex": "#183048" }
+  ]
 }

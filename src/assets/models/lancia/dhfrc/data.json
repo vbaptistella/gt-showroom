@@ -1,0 +1,22 @@
+{
+  "name": "Lancia Delta HF Integrale",
+  "id": "dhfrc",
+  "version": "Rally Car",
+  "type": "race",
+  "year": 1991,
+  "engine": {
+    "displacement": "2.0",
+    "type": "I4",
+    "power": 350,
+    "torque": 30.8
+  },
+  "dimensions": {
+    "length": 3900,
+    "height": 1380,
+    "width": 1700,
+    "weight": 1350
+  },
+  "price": "-",
+  "drivetrain": "fa",
+  "colours": [{ "name": "Livery", "livery": ["#ced0cd", "#ac192b", "#183773"] }]
+}

@@ -7,7 +7,6 @@ export function getCarsFromBrand(brand) {
       url: `http://localhost:3000/vehicles/${brand}`,
     })
       .then(function (response) {
-        console.log(response.data);
         resolve(response.data);
       })
       .catch((error) => {
@@ -24,7 +23,6 @@ export function getCarData(brand, carId) {
         url: `http://localhost:3000/vehicle/${brand}/${carId}`,
       })
         .then(function (response) {
-          console.log(response.data);
           resolve(response.data);
         })
         .catch((error) => {

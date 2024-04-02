@@ -1,0 +1,26 @@
+{
+  "name": "Dodge Viper",
+  "id": "viprt",
+  "version": "RT/10",
+  "year": 1999,
+  "engine": {
+    "displacement": "8.0",
+    "type": "V10",
+    "power": 463,
+    "torque": 66.3
+  },
+  "dimensions": {
+    "length": 4448,
+    "height": 1194,
+    "width": 1923,
+    "weight": 1506
+  },
+  "price": "72.790",
+  "drivetrain": "fr",
+  "defaultColour": 1,
+  "colours": [
+    { "name":"Viper Black", "hex": "#101010"},
+    { "name":"Viper Red", "hex": "#940018"},
+    { "name":"Viper Blue / White Stripes", "livery": ["#00317B", "#FFFFFF","#00317B"]}
+  ]
+}

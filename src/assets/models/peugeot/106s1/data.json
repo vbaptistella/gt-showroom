@@ -1,0 +1,44 @@
+{
+  "name": "Peugeot 106",
+  "type": "road",
+  "id": "106s1",
+  "version": "1.6 S16",
+  "year": 1999,
+  "engine": {
+    "displacement": "1.6",
+    "type": "I4",
+    "power": 92,
+    "torque": 14.7
+  },
+  "dimensions": {
+    "length": 3678,
+    "width": 1610,
+    "height": 1357,
+    "weight": 960
+  },
+  "price": "23.500",
+  "drivetrain": "ff",
+  "defaultColour": 0,
+  "colours": [
+    {
+      "name": "Blaze Yellow",
+      "hex": "#B8A000"
+    },
+    {
+      "name": "Platinum Silver",
+      "hex": "#909090"
+    },
+    {
+      "name": "Cherry Red",
+      "hex": "#880808"
+    },
+    {
+      "name": "Genesis Blue",
+      "hex": "#203050"
+    },
+    {
+      "name": "Indigo Blue",
+      "hex": "#202060"
+    }
+  ]
+}

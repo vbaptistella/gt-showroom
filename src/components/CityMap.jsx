@@ -5,7 +5,7 @@ import "./styles/cityMap.css";
 
 import MapIcon from "./MapIcon";
 
-export default function CityMap({ setSelectedDistrict, setCurrentScreen }) {
+export default function CityMap() {
   return (
     <div id="cityMap">
       {Object.values(districts).map((district) => (

@@ -1,0 +1,38 @@
+{
+  "name": "Volkswagen Golf",
+  "type": "road",
+  "id": "glfv6",
+  "version": "V6",
+  "year": 1999,
+  "engine": {
+    "displacement": "2.8",
+    "type": "VR6",
+    "power": 201,
+    "torque": 27.6
+  },
+  "dimensions": {
+    "length": 4149,
+    "width": 1735,
+    "height": 1439,
+    "weight": 1284
+  },
+  "price": "40.210",
+  "drivetrain": "ff",
+  "defaultColour": 5,
+  "colours": [
+    { "name": "Satin Silver", "hex": "#A0A098" },
+    { "name": "Candy White", "hex": "#C8C8B8" },
+    { "name": "Diamond Black", "hex": "#282830" },
+    { "name": "Black", "hex": "#282828" },
+    { "name": "Futura Yellow", "hex": "#785830" },
+    { "name": "Flash Red", "hex": "#980818" },
+    { "name": "Tropic Orange", "hex": "#682008" },
+    { "name": "Canyon Red", "hex": "#601018" },
+    { "name": "Cosmic Green", "hex": "#008040" },
+    { "name": "Bright Green", "hex": "#002008" },
+    { "name": "Ink Blue", "hex": "#082030" },
+    { "name": "Indigo Blue", "hex": "#101038" },
+    { "name": "Jazz Blue", "hex": "#303888" },
+    { "name": "Gray Anthracite", "hex": "#102838" }
+  ]
+}

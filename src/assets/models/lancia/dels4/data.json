@@ -1,0 +1,23 @@
+{
+  "name": "Lancia Delta",
+  "id": "dels4",
+  "version": "S4 Rally Car",
+  "type": "race",
+  "year": 1985,
+  "engine": {
+    "displacement": "1.8",
+    "type": "I4",
+    "power": 456,
+    "torque": 45.1
+  },
+  "dimensions": {
+    "length": 3900,
+    "height": 1380,
+    "width": 1700,
+    "weight": 890
+  },
+  "price": "500.000",
+  "drivetrain": "fa",
+  "defaultColour": 0,
+  "colours": [{ "name": "Livery", "livery": ["#ced0cd", "#ac192b", "#183773"] }]
+}

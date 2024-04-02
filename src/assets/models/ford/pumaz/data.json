@@ -4,7 +4,7 @@
   "version": "1.7 Zetec-SE VCT",
   "year": 1999,
   "engine": {
-    "displacement": 1679,
+    "displacement": "1.7",
     "type": "I4",
     "power": 123,
     "torque": 16.0
@@ -18,13 +18,14 @@
   "price": "27.710",
   "drivetrain": "ff",
   "model": "ford/for_pum_zse",
-  "colours": {
-    "Moondust Silver Metallic": "#a0a0a0",
-    "Panther Black Metallic": "#202020",
-    "Radiant Red Solid": "#850016",
-    "Electric Green Metallic": "#1d9839",
-    "Pacific Green Metallic": "#0f6049",
-    "Melina Blue Metallic": "#21295e",
-    "Thistle Metallic": "#37102f"
-  }
+  "defaultColour": 5,
+  "colours": [
+    { "name": "Moondust Silver Metallic", "hex": "#a0a0a0" },
+    { "name": "Panther Black Metallic", "hex": "#202020" },
+    { "name": "Radiant Red Solid", "hex": "#850016" },
+    { "name": "Electric Green Metallic", "hex": "#1d9839" },
+    { "name": "Pacific Green Metallic", "hex": "#0f6049" },
+    { "name": "Melina Blue Metallic", "hex": "#21295e" },
+    { "name": "Thistle Metallic", "hex": "#37102f" }
+  ]
 }

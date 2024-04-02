@@ -1,0 +1,31 @@
+{
+  "name": "Lancia Delta HF Integrale Evoluzione",
+  "id": "dhfie",
+  "version": "",
+  "year": 1991,
+  "engine": {
+    "displacement": "2.0",
+    "type": "I4",
+    "power": 213,
+    "torque": 30.4
+  },
+  "dimensions": {
+    "length": 3900,
+    "height": 1365,
+    "width": 1770,
+    "weight": 1350
+  },
+  "price": "32.000",
+  "drivetrain": "fa",
+  "defaultColour": 2,
+  "colours": [
+    { "name": "Pearl White", "hex": "#BDBDAC" },
+    { "name": "White", "hex": "#BDBDBD" },
+    { "name": "Monza Red", "hex": "#8B0808" },
+    { "name": "Gialla", "hex": "#B4A420" },
+    { "name": "York Green", "hex": "#082008" },
+    { "name": "Lancia Dark Blue", "hex": "#202073" },
+    { "name": "Blue Lagos Mica", "hex": "#181829" },
+    { "name": "Bleu Lord", "hex": "#101020" }
+  ]
+}

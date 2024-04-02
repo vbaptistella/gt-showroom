@@ -43,7 +43,7 @@ export const districts = {
       { name: "RUF", id: "ruf", pos: [860, 170] },
       { name: "Audi", id: "audi", pos: [160, 480] },
       { name: "Opel", id: "opel", pos: [630, 420] },
-      { name: "Volkswagen", id: "volkswagen", pos: [550, 190] },
+      { name: "Volkswagen", id: "volkswagen", pos: [550, 130] },
     ],
     pos: [730, 210],
   },

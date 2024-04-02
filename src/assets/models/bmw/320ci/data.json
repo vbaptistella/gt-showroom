@@ -4,7 +4,7 @@
   "version": "",
   "year": 1999,
   "engine": {
-    "displacement": 2.0,
+    "displacement": "2.0",
     "type": "I6",
     "power": 145,
     "torque": 24.5
@@ -17,21 +17,21 @@
   },
   "price": "41.800",
   "drivetrain": "fr",
-  "colours": {
-    "Alpine White": "#C0C0B0",
-    "Titanium Silver Metallic": "#A0A8A8",
-    "Steel Gray Metallic": "#586060",
-    "Cosmos Black Metallic": "#404848",
-    "Black": "#202020",
-    "Bright Red": "#901018",
-    "Brick Red": "#502828",
-    "Sienna Red Metallic": "#381810",
-    "Light Yellow Metallic": "#908038",
-    "Sea Green Metallic": "#285850",
-    "Fern Green Metallic": "#183020",
-    "Topaz Blue": "#283850",
-    "Steel Blue Metallic": "#586068",
-    "Orient Blue Metallic": "#182038",
-    "Dark Blue": "#101038"
-  }
+  "colours": [
+    { "name": "Light Yellow Metallic", "hex": "#908038" },
+    { "name": "Alpine White", "hex": "#C0C0B0" },
+    { "name": "Titanium Silver Metallic", "hex": "#A0A8A8" },
+    { "name": "Steel Gray Metallic", "hex": "#586060" },
+    { "name": "Cosmos Black Metallic", "hex": "#404848" },
+    { "name": "Black", "hex": "#202020" },
+    { "name": "Bright Red", "hex": "#901018" },
+    { "name": "Brick Red", "hex": "#502828" },
+    { "name": "Sienna Red Metallic", "hex": "#381810" },
+    { "name": "Sea Green Metallic", "hex": "#285850" },
+    { "name": "Fern Green Metallic", "hex": "#183020" },
+    { "name": "Topaz Blue", "hex": "#283850" },
+    { "name": "Steel Blue Metallic", "hex": "#586068" },
+    { "name": "Orient Blue Metallic", "hex": "#182038" },
+    { "name": "Dark Blue", "hex": "#101038" }
+  ]
 }

@@ -1,0 +1,29 @@
+{
+  "name": "Peugeot 406",
+  "type": "road",
+  "id": "406cp",
+  "version": "3.0 V6 Coupé",
+  "year": 1999,
+  "engine": {
+    "displacement": "3.0",
+    "type": "V6",
+    "power": 194,
+    "torque": 27.8
+  },
+  "dimensions": {
+    "length": 4615,
+    "width": 1780,
+    "height": 1354,
+    "weight": 1458
+  },
+  "price": "42.860",
+  "drivetrain": "ff",
+  "defaultColour": 4,
+  "colours": [
+    { "name": "Thallium Gray", "hex": "#989c9c" },
+    { "name": "Scarlet Red", "hex": "#801410" },
+    { "name": "Louxor Yellow", "hex": "#c0c66e" },
+    { "name": "Lugano Green", "hex": "#80948c" },
+    { "name": "Byzance Blue", "hex": "#484a72" }
+  ]
+}

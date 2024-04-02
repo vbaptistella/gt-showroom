@@ -4,7 +4,7 @@
   "version": "A-Spec",
   "year": 1997,
   "engine": {
-    "displacement": 1500,
+    "displacement": "1.5",
     "type": "I4",
     "power": 99,
     "torque": 12.7
@@ -17,7 +17,5 @@
   },
   "price": "-",
   "drivetrain": "ff",
-  "colours": {
-    "Silver Stone Metallic": "#a0a0a0"
-  }
+  "colours": [{ "name": "Silver Stone Metallic", "hex": "#a0a0a0" }]
 }

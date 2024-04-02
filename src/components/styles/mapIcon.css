@@ -39,3 +39,11 @@
     );
   }
 }
+
+.brand-logo {
+  display: flex;
+  width: 64px;
+  & img {
+    width: 100%;
+  }
+}

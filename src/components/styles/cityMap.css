@@ -10,10 +10,3 @@
   position: relative;
   justify-content: center;
 }
-
-#root {
-  display: flex;
-  flex-direction: column;
-  place-items: center start;
-  height: 100vh;
-}

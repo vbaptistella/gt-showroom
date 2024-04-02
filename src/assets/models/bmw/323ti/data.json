@@ -4,7 +4,7 @@
   "version": "",
   "year": 1999,
   "engine": {
-    "displacement": 2.5,
+    "displacement": "2.5",
     "type": "I6",
     "power": 165,
     "torque": 24.5
@@ -17,20 +17,21 @@
   },
   "price": "52.890",
   "drivetrain": "fr",
-  "colours": {
-    "Alpinweiss": "#C8C8B8",
-    "Titansilber Metallic": "#A8A8A8",
-    "Cosmosschwarz Metallic": "#404040",
-    "Schwarz": "#202020",
-    "Bronzit Metallic": "#786020",
-    "Hellrot": "#900810",
-    "Sienarot Metallic": "#380808",
-    "Türkis Metallic": "#789078",
-    "Farngrün Metallic": "#183018",
-    "Ascotgrün Metallic": "#284838",
-    "Stahlblau Metallic": "#606068",
-    "Avusblau": "#384060",
-    "Dankeblau": "#080838",
-    "Montrealblau": "#100828"
-  }
+  "defaultColour": 9,
+  "colours": [
+    { "name": "Alpinweiss", "hex": "#C8C8B8" },
+    { "name": "Titansilber Metallic", "hex": "#A8A8A8" },
+    { "name": "Cosmosschwarz Metallic", "hex": "#404040" },
+    { "name": "Schwarz", "hex": "#202020" },
+    { "name": "Bronzit Metallic", "hex": "#786020" },
+    { "name": "Hellrot", "hex": "#900810" },
+    { "name": "Sienarot Metallic", "hex": "#380808" },
+    { "name": "Türkis Metallic", "hex": "#789078" },
+    { "name": "Farngrün Metallic", "hex": "#183018" },
+    { "name": "Ascotgrün Metallic", "hex": "#284838" },
+    { "name": "Stahlblau Metallic", "hex": "#606068" },
+    { "name": "Avusblau", "hex": "#384060" },
+    { "name": "Dankeblau", "hex": "#080838" },
+    { "name": "Montrealblau", "hex": "#100828" }
+  ]
 }

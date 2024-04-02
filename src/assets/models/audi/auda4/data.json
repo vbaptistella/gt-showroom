@@ -17,20 +17,20 @@
   },
   "price": "50.530",
   "drivetrain": "fa",
-  "colours": {
-    "Casablanca White": "#C8C8B8",
-    "Aluminium Silver Metallic": "#A0A0A0",
-    "Quartz Gray Metallic": "#707070",
-    "Brilliant Black with Clear Lacquer": "#181818",
-    "Mocha Brown Pearl Effect": "#483808",
-    "Volcano Black Pearl Effect": "#282828",
-    "Laser Red": "#801000",
-    "Autumn Red Metallic": "#680800",
-    "Hibiscus Red Pearl Effect": "#481018",
-    "Paradise Green Metallic": "#588850",
-    "Cactus Green Pearl Effect": "#003020",
-    "Azure Blue Pearl Effect": "#303048",
-    "Ming Blue Pearl Effect": "#282830",
-    "Velvet Blue": "#181828"
-  }
+  "colours": [
+    { "name": "Brilliant Black with Clear Lacquer", "hex": "#181818" },
+    { "name": "Casablanca White", "hex": "#C8C8B8" },
+    { "name": "Aluminium Silver Metallic", "hex": "#A0A0A0" },
+    { "name": "Quartz Gray Metallic", "hex": "#707070" },
+    { "name": "Mocha Brown Pearl Effect", "hex": "#483808" },
+    { "name": "Volcano Black Pearl Effect", "hex": "#282828" },
+    { "name": "Laser Red", "hex": "#801000" },
+    { "name": "Autumn Red Metallic", "hex": "#680800" },
+    { "name": "Hibiscus Red Pearl Effect", "hex": "#481018" },
+    { "name": "Paradise Green Metallic", "hex": "#588850" },
+    { "name": "Cactus Green Pearl Effect", "hex": "#003020" },
+    { "name": "Azure Blue Pearl Effect", "hex": "#303048" },
+    { "name": "Ming Blue Pearl Effect", "hex": "#282830" },
+    { "name": "Velvet Blue", "hex": "#181828" }
+  ]
 }
