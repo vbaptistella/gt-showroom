@@ -1,0 +1,31 @@
+#brandsMenu {
+  display: flex;
+  max-width: 1200px;
+  width: 90vw;
+  max-height: 675px;
+  height: 75vh;
+  border-radius: 15px;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  justify-content: center;
+  & .brand-logo {
+    max-width: 110px;
+    height: 110px;
+    padding: 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+      width: 100%;
+      max-width: 100px;
+      max-height: 100px;
+    }
+  }
+}
+
+.card-button {
+  width: 200px;
+  height: 200px;
+}

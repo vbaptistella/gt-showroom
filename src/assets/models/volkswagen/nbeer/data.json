@@ -1,0 +1,33 @@
+{
+  "name": "Volkswagen New Beetle",
+  "type": "race",
+  "id": "nbeer",
+  "version": "Race Car",
+  "year": 1999,
+  "engine": {
+    "displacement": "2.0",
+    "type": "I4",
+    "power": 370,
+    "torque": 16.8
+  },
+  "dimensions": {
+    "length": 4089,
+    "width": 1724,
+    "height": 1511,
+    "weight": 1072
+  },
+  "price": "80.000",
+  "drivetrain": "ff",
+  "defaultColour": 6,
+  "colours": [
+    { "name": "Cool White", "hex": "#C0C0B8" },
+    { "name": "Silver Arrow Metallic", "hex": "#989898" },
+    { "name": "Schwarz Uni", "hex": "#202020" },
+    { "name": "Rot Uni", "hex": "#800810" },
+    { "name": "Lemongelb", "hex": "#C0C068" },
+    { "name": "Canyonred Perleffekt", "hex": "#582028" },
+    { "name": "Yellow", "hex": "#C0A818" },
+    { "name": "Cybergreen Metallic", "hex": "#A0B068" },
+    { "name": "Cameo Blue", "hex": "#9898A0" }
+  ]
+}

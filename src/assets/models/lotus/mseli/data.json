@@ -2,6 +2,7 @@
   "name": "Lotus Motor Sport Elise",
   "id": "mseli",
   "version": "",
+  "type": "race",
   "year": 1999,
   "engine": {
     "displacement": "1.8",

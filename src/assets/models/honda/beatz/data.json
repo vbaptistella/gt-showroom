@@ -1,0 +1,26 @@
+{
+  "name": "Honda Beat",
+  "version": "ver.Z",
+  "type": "road",
+  "id": "beatz",
+  "year": 1994,
+  "engine": {
+    "displacement": "656cc",
+    "type": "I4",
+    "power": 63,
+    "torque": 6.1
+  },
+  "dimensions": {
+    "length": 3295,
+    "width": 1395,
+    "height": 1175,
+    "weight": 760
+  },
+  "price": "9.000",
+  "drivetrain": "mr",
+  "defaultColour": 0,
+  "colours": [
+    { "name": "Blade Silver Metallic", "hex": "#9C9C9C" },
+    { "name": "Blade Silver Metallic", "hex": "#082910" }
+  ]
+}

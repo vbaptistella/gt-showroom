@@ -1,0 +1,23 @@
+{
+  "name": "Lancia STRATOS",
+  "id": "strat",
+  "type": "road",
+  "version": "",
+  "year": 1973,
+  "engine": {
+    "displacement": "2.0",
+    "type": "I4",
+    "power": 190,
+    "torque": 22.5
+  },
+  "dimensions": {
+    "length": 3710,
+    "height": 1114,
+    "width": 1750,
+    "weight": 980
+  },
+  "price": "-",
+  "drivetrain": "mr",
+  "defaultColour": 0,
+  "colours": [{ "name": "Bordeaux Red", "hex": "#701808" }]
+}

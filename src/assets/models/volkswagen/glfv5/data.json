@@ -18,7 +18,7 @@
   },
   "price": "33.040",
   "drivetrain": "ff",
-  "defaultColour": 1,
+  "defaultColour": 0,
   "colours": [
     { "name": "Satin Silver", "hex": "#A0A098" },
     { "name": "Candy White", "hex": "#C8C8B8" },

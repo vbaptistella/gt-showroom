@@ -1,7 +1,7 @@
 {
-  "name": "Lancia Delta HF Integrale",
+  "name": "Lancia Delta",
   "id": "dhfrc",
-  "version": "Rally Car",
+  "version": "HF Integrale Rally Car",
   "type": "race",
   "year": 1991,
   "engine": {

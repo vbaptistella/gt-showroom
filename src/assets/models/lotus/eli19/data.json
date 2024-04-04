@@ -1,0 +1,35 @@
+{
+  "name": "Lotus Elise",
+  "id": "eli19",
+  "version": "1.3i",
+  "year": 1999,
+  "engine": {
+    "displacement": "1.8",
+    "type": "I4",
+    "power": 190,
+    "torque": 19.3
+  },
+  "dimensions": {
+    "length": 3726,
+    "height": 1202,
+    "width": 1701,
+    "weight": 670
+  },
+  "price": "58.530",
+  "drivetrain": "mr",
+  "defaultColour": 7,
+  "colours": [
+    { "name": "Monaco White", "hex": "#C5C5BD" },
+    { "name": "New Aluminium Metallic", "hex": "#A4A4A4" },
+    { "name": "Titanium Metallic", "hex": "#838383" },
+    { "name": "Black", "hex": "#181818" },
+    { "name": "Calypso Red", "hex": "#941010" },
+    { "name": "Ruby Metallic", "hex": "#7B1818" },
+    { "name": "Chrome Orange Metallic", "hex": "#AC4100" },
+    { "name": "Mustard Yellow", "hex": "#CD9C00" },
+    { "name": "Lotus Racing Green Metallic", "hex": "#002008" },
+    { "name": "Azure Blue Metallic", "hex": "#31315A" },
+    { "name": "Nautilus Blue Metallic", "hex": "#000031" },
+    { "name": "Deep Purple Metallic", "hex": "#310831" }
+  ]
+}

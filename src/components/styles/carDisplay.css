@@ -3,7 +3,10 @@ model-viewer {
   width: 90vw;
   max-height: 675px;
   height: 75vh;
+  opacity: 0;
+  transition: opacity 1.5s ease;
 }
+
 .car-viewer-data-container {
   width: 100%;
   position: absolute;
@@ -32,6 +35,7 @@ model-viewer {
   padding: 0 70px;
   margin-top: -100px;
   z-index: 999;
+  flex-wrap: wrap;
 }
 
 .buy-button {
@@ -58,13 +62,28 @@ model-viewer {
   }
 }
 .technical-data {
-  width: 50%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border: 1px solid #777;
+  border-radius: 5px;
   & p {
     margin: 0;
   }
+}
+
+.price {
+  width: 50%;
+  justify-content: flex-end;
+  display: flex;
+  flex: 1;
+}
+
+.car-colours-container {
+  display: flex;
+  width: 80%;
 }
 
 .car-colours {
@@ -76,31 +95,41 @@ model-viewer {
     padding: 0;
     margin: 5px;
     border-radius: 50%;
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid rgba(204, 204, 204, 0.5);
+    }
     &.active {
-      border: 2px solid #ccc;
+      border: 2px solid #fff !important;
+      transform: scale(1.2);
     }
   }
 }
 
 .car-colour-list {
   display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 50px;
+  border: 1px solid #777;
+  align-items: center;
+}
+
+.car-colour-name {
+  margin: 0 15px 0 10px;
 }
 
 .data-table {
   display: flex;
   flex-direction: column;
   width: fit-content;
+  border-radius: 5px;
+  padding: 2px;
+  overflow: hidden;
 }
 
 .data-table-row {
   display: flex;
-  border-radius: 5px;
-  background: linear-gradient(
-    180deg,
-    rgba(54, 54, 54, 1) 0%,
-    rgba(69, 69, 69, 1) 100%
-  );
-  font-weight: bold;
 }
 
 .data-table-cell-key,
@@ -109,21 +138,22 @@ model-viewer {
   display: flex;
   justify-content: flex-start;
   margin: 2px;
-  padding: 2px 7px;
+  padding: 2px 5px;
   flex-wrap: nowrap;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .data-table-cell-value {
-  background: linear-gradient(180deg, #8f9392 0%, #a7a6a7 100%);
   border-radius: 5px;
-  color: #303030;
-  padding: 2px 25px;
-  justify-content: center;
+  color: #fff;
+  padding-right: 15px;
+  justify-content: flex-start;
+  display: flex;
 }
 
 .data-table-cell-key {
+  justify-content: flex-end;
   padding-left: 15px;
   width: calc(45% - 4px);
 }

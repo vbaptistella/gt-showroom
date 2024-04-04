@@ -1,7 +1,7 @@
 {
-  "name": "Lancia Delta HF Integrale",
+  "name": "Lancia Delta",
   "id": "dhfin",
-  "version": "",
+  "version": "HF Integrale",
   "year": 1991,
   "engine": {
     "displacement": "2.0",

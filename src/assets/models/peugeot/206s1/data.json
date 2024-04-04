@@ -22,6 +22,10 @@
   "colours": [
     { "name": "Blanc Banquise", "hex": "#BDBDB4" },
     { "name": "Moon Stone", "hex": "#8B8B94" },
+    { "name": "Vert Romarin", "hex": "#294129" },
+    { "name": "Bleu Tivoli", "hex": "#4A528B" },
+    { "name": "Bleu De Chine", "hex": "#100862" },
+    { "name": "Bleu Santorin", "hex": "#101841" },
     { "name": "Gris Quartz", "hex": "#6A6A5A" },
     { "name": "Noir Onyx", "hex": "#181818" },
     { "name": "Rouge Vallelunga", "hex": "#8B0808" },
@@ -29,10 +33,6 @@
     { "name": "Rouge Lucifer", "hex": "#4A2020" },
     { "name": "Tangerine", "hex": "#8B5A08" },
     { "name": "Vert Ceylan", "hex": "#103910" },
-    { "name": "Vert Patagonie", "hex": "#102908" },
-    { "name": "Vert Romarin", "hex": "#294129" },
-    { "name": "Bleu Tivoli", "hex": "#4A528B" },
-    { "name": "Bleu De Chine", "hex": "#100862" },
-    { "name": "Bleu Santorin", "hex": "#101841" }
+    { "name": "Vert Patagonie", "hex": "#102908" }
   ]
 }

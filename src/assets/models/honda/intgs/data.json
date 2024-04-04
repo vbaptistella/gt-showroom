@@ -1,0 +1,33 @@
+{
+  "name": "Honda Integra",
+  "version": "SiR-G",
+  "type": "road",
+  "id": "intgs",
+  "year": 1998,
+  "engine": {
+    "displacement": "1.8",
+    "type": "I4",
+    "power": 174,
+    "torque": 17.4
+  },
+  "dimensions": {
+    "length": 4380,
+    "width": 1695,
+    "height": 1335,
+    "weight": 1120
+  },
+  "price": "19.880",
+  "drivetrain": "ff",
+  "defaultColour": 8,
+  "colours": [
+    { "name": "Frost White", "hex": "#B8B8B8" },
+    { "name": "Vogue Silver Metallic", "hex": "#909090" },
+    { "name": "Lightning Silver Metallic", "hex": "#585858" },
+    { "name": "Starlight Black Pearl", "hex": "#101018" },
+    { "name": "Milan Red", "hex": "#880810" },
+    { "name": "Burning Red Pearl", "hex": "#600808" },
+    { "name": "Cypress Green Pearl", "hex": "#204828" },
+    { "name": "Super Sonic Blue Pearl", "hex": "#101838" },
+    { "name": "Adriatic Blue Pearl", "hex": "#201870" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Honda Z",
+  "version": "Turbo",
+  "type": "road",
+  "id": "zturb",
+  "year": 1998,
+  "engine": {
+    "displacement": "656cc",
+    "type": "I3",
+    "power": 63,
+    "torque": 9.5
+  },
+  "dimensions": {
+    "length": 3395,
+    "width": 1475,
+    "height": 1675,
+    "weight": 970
+  },
+  "price": "12.880",
+  "drivetrain": "fa",
+  "defaultColour": 4,
+  "colours": [
+    { "name": "Creta White", "hex": "#B8B8B0" },
+    { "name": "Splash Silver Metallic", "hex": "#989898" },
+    { "name": "Starlight Black Pearl", "hex": "#303030" },
+    { "name": "Oriental Red Metallic", "hex": "#781808" },
+    { "name": "Spray Green Metallic", "hex": "#206040" },
+    { "name": "Adriatic Blue Pearl", "hex": "#202848" }
+  ]
+}

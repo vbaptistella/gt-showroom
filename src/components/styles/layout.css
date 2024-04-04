@@ -1,5 +1,5 @@
 #header {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   box-sizing: border-box;
   display: flex;
@@ -30,41 +30,52 @@ main {
 
 .back-button {
   display: flex;
-  border-radius: 50px 0 0 50px;
+  border-radius: 0;
   height: 50px;
   justify-content: center;
   align-items: center;
-  padding-right: 35px;
-  background: linear-gradient(180deg, #1a1a1a 0%, #030205 100%);
   color: #fff;
-  border: 1px solid rgba(5, 5, 5, 1);
   position: relative;
   z-index: 991;
-  &:hover {
-    border: 1px solid rgba(56, 56, 56, 1) 0%;
-  }
 }
 
 .home-button {
-  width: 50px;
   height: 50px;
   display: flex;
-  border-radius: 50%;
-  padding: 0;
+  border-radius: 0;
   justify-content: center;
   align-items: center;
-  margin-left: -25px;
-  background: radial-gradient(
-    circle 130px at center -40px,
-    rgba(67, 127, 166, 1) 0%,
-    rgba(59, 121, 156, 1) 50%,
-    rgba(34, 96, 133, 1) 50%,
-    rgba(30, 72, 108, 1) 100%
-  );
-  border: 1px solid #1e486c;
   color: #fff;
   position: relative;
   z-index: 992;
+}
+
+.gt6-btn {
+  background: transparent;
+
+  &::after {
+    opacity: 0;
+    content: "";
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: radial-gradient(
+      circle,
+      rgba(43, 130, 230, 0.8) 0,
+      rgba(43, 130, 230, 0.8) 30%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transition: opacity 0.2s ease;
+  }
+  &:hover {
+    background: transparent;
+    &::after {
+      opacity: 1;
+      transition: opacity 0.2s ease;
+    }
+  }
 }
 
 .breadcrumbs {

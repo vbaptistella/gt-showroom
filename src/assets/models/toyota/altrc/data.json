@@ -1,0 +1,26 @@
+{
+  "name": "Toyota Altezza",
+  "version": "Race Car",
+  "type": "race",
+  "id": "altrc",
+  "year": 1999,
+  "engine": {
+    "displacement": "2.0",
+    "type": "I4",
+    "power": 440,
+    "torque": 22.2
+  },
+  "dimensions": {
+    "length": 4400,
+    "width": 1720,
+    "height": 1410,
+    "weight": 1144
+  },
+  "price": "90.000",
+  "drivetrain": "fr",
+  "defaultColour": 0,
+  "colours": [
+    { "name": "Livery", "livery": ["#afb3ac", "#24603f", "#7d2e23"] },
+    { "name": "Livery", "livery": ["#afb3ac", "#191f65", "#7d2e23"] }
+  ]
+}

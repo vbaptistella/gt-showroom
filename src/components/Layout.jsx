@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
 
 import "./styles/layout.css";
 
-export default function Layout() {
+export default function Layout({ brandName, carName }) {
   const [parentPath, setParentPath] = useState("");
   const [path, setPath] = useState([]);
   const location = useLocation();
@@ -23,7 +24,6 @@ export default function Layout() {
   useEffect(() => {
     bgVideoRef.current.playbackRate = 0.5;
     bgVideoRef.current.play();
-    console.log(bgVideoRef.current.defaultPlaybackRate);
   });
 
   return (
@@ -32,12 +32,12 @@ export default function Layout() {
         {location.pathname !== "/" && (
           <>
             <Link to={parentPath}>
-              <button className="back-button">
-                <span className="material-icons">arrow_back</span> Back
+              <button className="back-button gt6-btn">
+                <span className="material-icons">arrow_back</span>
               </button>
             </Link>
             <Link to="/">
-              <button className="home-button">
+              <button className="home-button gt6-btn">
                 <span className="material-icons">home</span>
               </button>
             </Link>
@@ -50,7 +50,9 @@ export default function Layout() {
                         <span className="material-icons">chevron_right</span>
                       )}
                       <div className="breadcrumb-stage" key={stage}>
-                        {stage}
+                        {index === 2 ? brandName : null}
+                        {index === 3 ? carName : null}
+                        {index < 2 ? stage : null}
                       </div>
                     </>
                   );

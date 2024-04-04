@@ -1,8 +1,51 @@
+.brand-data {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  background: rgba(128, 128, 128, 0.2);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.brand-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  & h2 {
+    margin-top: 0;
+  }
+}
+
+.brand-logo {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex-shrink: 0;
+  height: 150px;
+  & img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 150px;
+  }
+  & h2 {
+    margin-bottom: 0;
+  }
+}
+
+.brand-description {
+  padding: 15px;
+}
+
 .car-list {
   list-style: none;
   width: 100%;
   padding: 15px 30px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   & a {
@@ -12,21 +55,20 @@
 }
 
 .car-item {
-  width: fit-content;
+  width: 330px;
   background: rgba(128, 128, 128, 0.2);
   padding: 0;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  border: 1px solid rgba(119, 119, 119, 0.502);
+  border: 2px solid transparent;
   box-shadow: inset 0 0 5px rgba(204, 204, 204, 0);
-  transition: .5s ease;
+  transition: 0.5s ease;
   backdrop-filter: blur(20px);
   &:hover {
-    background: rgba(128, 128, 128, 0.5);
-    border: 1px solid rgba(204, 204, 204, 0.8);
-    box-shadow: inset 0 0 50px rgba(204, 204, 204, 0.8);
-    transition: .5s ease;
+    background: rgba(69, 121, 167, 0.5);
+    border: 2px solid #4f7e88;
+    transition: 0.5s ease;
   }
 }
 
@@ -39,7 +81,7 @@
   justify-content: center;
   padding-left: 20px;
   & img {
-    width: 300px;
+    width: 360px;
     margin-top: -70px;
   }
 }

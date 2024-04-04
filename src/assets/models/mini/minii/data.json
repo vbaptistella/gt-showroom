@@ -28,6 +28,7 @@
     { "name": "British Racing Green Metallic", "hex": "#204131" },
     { "name": "Hawaiian Blue Metallic", "hex": "#29ACA4" },
     { "name": "Surf Blue", "hex": "#188B9C" },
-    { "name": "Anthracite Metallic", "hex": "#202018" }
+    { "name": "Anthracite Metallic", "hex": "#202018" },
+    { "name": "May Pink", "hex": "#b959a6" }
   ]
 }

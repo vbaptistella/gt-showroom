@@ -1,0 +1,32 @@
+{
+  "name": "Honda Accord Wagon",
+  "version": "SiR",
+  "type": "road",
+  "id": "acwsi",
+  "year": 1998,
+  "engine": {
+    "displacement": "2.3",
+    "type": "I4",
+    "power": 197,
+    "torque": 20.0
+  },
+  "dimensions": {
+    "length": 4740,
+    "width": 1730,
+    "height": 1445,
+    "weight": 1430
+  },
+  "price": "24.980",
+  "drivetrain": "ff",
+  "defaultColour": 5,
+  "colours": [
+    { "name": "Taffetas White", "hex": "#A8A8A8" },
+    { "name": "Premium White Pearl", "hex": "#A8A8A0" },
+    { "name": "Sebring Silver Metallic", "hex": "#808080" },
+    { "name": "Moonstone Silver Metallic", "hex": "#787878" },
+    { "name": "Nighthawk Black Pearl", "hex": "#101010" },
+    { "name": "Ruby Red Pearl", "hex": "#580808" },
+    { "name": "Naples Gold Metallic", "hex": "#989880" },
+    { "name": "Monterey Blue Pearl", "hex": "#081038" }
+  ]
+}

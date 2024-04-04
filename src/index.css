@@ -51,8 +51,8 @@ h1 {
 }
 
 button {
+  border: none;
   border-radius: 8px;
-  border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -63,7 +63,4 @@ button {
   &:hover {
     background-color: rgba(237, 237, 237, 1);
   }
-}
-button:hover {
-  border: 1px solid #777;
 }

@@ -1,0 +1,30 @@
+{
+  "name": "Honda Civic",
+  "version": "Ferio Si-II",
+  "type": "road",
+  "id": "civsd",
+  "year": 1998,
+  "engine": {
+    "displacement": "1.6",
+    "type": "I4",
+    "power": 167,
+    "torque": 16.0
+  },
+  "dimensions": {
+    "length": 4450,
+    "width": 1695,
+    "height": 1390,
+    "weight": 1130
+  },
+  "price": "18.580",
+  "drivetrain": "ff",
+  "defaultColour": 1,
+  "colours": [
+    { "name": "Frost White", "hex": "#C0C0B8" },
+    { "name": "Vogue Silver Metallic", "hex": "#A0A0A0" },
+    { "name": "Phantom Gray Pearl", "hex": "#383838" },
+    { "name": "Matador Red Pearl", "hex": "#402020" },
+    { "name": "Cypress Green Pearl", "hex": "#183828" },
+    { "name": "Cyclone Blue Metallic", "hex": "#506868" }
+  ]
+}

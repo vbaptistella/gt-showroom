@@ -18,8 +18,8 @@
   "price": "34.130",
   "drivetrain": "ff",
   "colours": [
-    { "name": "Aluminium Silver Metallic", "hex": "#989898" },
     { "name": "Casablanca White", "hex": "#C0C0B0" },
+    { "name": "Aluminium Silver Metallic", "hex": "#989898" },
     { "name": "Volcano Black Pearl Effect", "hex": "#202020" },
     { "name": "Brilliant Black", "hex": "#181818" },
     { "name": "Laser Red", "hex": "#780800" },

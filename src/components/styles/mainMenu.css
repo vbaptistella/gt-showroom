@@ -1,0 +1,34 @@
+#mainMenu {
+  display: flex;
+  max-width: 1200px;
+  width: 90vw;
+  max-height: 675px;
+  height: 75vh;
+  /* background-image: url(../../assets/img/citymap_placeholder.png); */
+  border-radius: 15px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-button {
+  width: 330px;
+  height: 330px;
+  background: rgba(128, 128, 128, 0.2);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  box-shadow: inset 0 0 5px rgba(204, 204, 204, 0);
+  transition: 0.5s ease;
+  backdrop-filter: blur(20px);
+  &:hover {
+    background: rgba(69, 121, 167, 0.5);
+    border: 2px solid #4f7e88;
+    transition: 0.5s ease;
+  }
+}

@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from "react";
 import { getCarData } from "../services/carService";
+import ColourButton from "./ColourButton";
+import TechnicalData from "./TechnicalData";
 
 import "./styles/carDisplay.css";
 
-export default function CarDisplay() {
+export default function CarDisplay({ setCarName }) {
   const [carId, setCarId] = useState("");
   const [brand, setBrand] = useState("");
   const [carData, setCarData] = useState({});
@@ -22,6 +25,8 @@ export default function CarDisplay() {
     if (carId && brand) {
       getCarData(brand, carId).then((data) => {
         setCarData(data);
+        setCarName(data.name);
+        setCarColourName();
       });
     }
   }, [brand, carId]);
@@ -51,11 +56,17 @@ export default function CarDisplay() {
     }
   };
 
-  const test = () => {
+  const afterLoad = () => {
     if (!isInitialColour) {
       const initialColour = carData.defaultColour || 0;
-      handleColourChange(initialColour);
-      setIsInitialColour(true);
+      setTimeout(() => {
+        handleColourChange(initialColour);
+        setIsInitialColour(true);
+      }, 200);
+      setTimeout(() => {
+        modelViewer.current.attributes["camera-target"].value = "0 0 0";
+        modelViewer.current.style.opacity = 1;
+      }, 500);
     }
   };
 
@@ -70,56 +81,6 @@ export default function CarDisplay() {
                 <h2>{carData.name}</h2>
                 <p>{carData.version}</p>
               </div>
-              <div className="technical-data">
-                <h4>Drivetrain</h4>
-                <div className="data-table">
-                  <div className="data-table-row">
-                    <div className="data-table-cell-key">Engine</div>
-                    <div className="data-table-cell-value">
-                      {carData.engine.type} {carData.engine.displacement}
-                    </div>
-                  </div>
-                  <div className="data-table-row">
-                    <div className="data-table-cell-key">Power</div>
-                    <div className="data-table-cell-value">
-                      {carData.engine.power} BHP
-                    </div>
-                  </div>
-                  <div className="data-table-row">
-                    <div className="data-table-cell-key">Layout</div>
-                    <div className="data-table-cell-value">
-                      {carData.drivetrain.toUpperCase()}
-                    </div>
-                  </div>
-                </div>
-                <h4>Dimensions</h4>
-                <div className="data-table">
-                  <div className="data-table-row">
-                    <div className="data-table-cell-key">Length</div>
-                    <div className="data-table-cell-value">
-                      {carData.dimensions.length} mm
-                    </div>
-                  </div>
-                  <div className="data-table-row">
-                    <div className="data-table-cell-key">Width</div>
-                    <div className="data-table-cell-value">
-                      {carData.dimensions.width} mm
-                    </div>
-                  </div>
-                  <div className="data-table-row">
-                    <div className="data-table-cell-key">Height</div>
-                    <div className="data-table-cell-value">
-                      {carData.dimensions.height} mm
-                    </div>
-                  </div>
-                  <div className="data-table-row">
-                    <div className="data-table-cell-key">Weight</div>
-                    <div className="data-table-cell-value">
-                      {carData.dimensions.weight} kg
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <model-viewer
@@ -131,49 +92,36 @@ export default function CarDisplay() {
             auto-rotate
             auto-rotate-delay="200"
             interaction-prompt="none"
-            camera-orbit="225deg 85deg 105%"
+            camera-orbit="225deg 85deg 8m"
+            camera-target="-1m 0 -1m"
             rotation-per-second="15deg"
             environment-image=""
             shadow-intensity="2"
             camera-controls
-            load={test()}
+            load={afterLoad()}
             min-camera-orbit="auto 85deg auto"
             max-camera-orbit="auto 85deg auto"
             touch-action="pan-y"
           />
-          <div className="stage">
-            <div className="ground"></div>
-            <div className="panel"></div>
-          </div>
 
           <div className="car-data-bottom">
-            <div className="car-colours">
-              <div className="car-colour-list">
-                {carData.colours.map((colour, index) => {
-                  let colourValue;
-                  if (colour.livery) {
-                    colourValue = `linear-gradient(180deg, 
-                  ${colour.livery[0]} 0%,
-                  ${colour.livery[0]} 33%,
-                  ${colour.livery[1]} 33%,
-                  ${colour.livery[1]} 66%,
-                  ${colour.livery[2]} 66%,
-                  ${colour.livery[2]} 100%)`;
-                  } else {
-                    colourValue = colour.hex;
-                  }
-                  return (
-                    <p key={colour.hex || colour.name}>
-                      <button
-                        className={index === carColourId ? "active" : null}
-                        onClick={() => handleColourChange(index)}
-                        style={{ background: colourValue }}
-                      ></button>
-                    </p>
-                  );
-                })}
+            <div className="car-colours-container">
+              <div className="car-colours">
+                <div className="car-colour-list">
+                  {carData.colours.map((colour, index) => (
+                    <ColourButton
+                      key={colour.hex || colour.name}
+                      colour={colour}
+                      index={index}
+                      carColourId={carColourId}
+                      handleColourChange={handleColourChange}
+                    />
+                  ))}
+                  {carColourName && (
+                    <span className="car-colour-name">{carColourName}</span>
+                  )}
+                </div>
               </div>
-              {carColourName && <span>{carColourName}</span>}
             </div>
 
             <div className="price">
@@ -185,6 +133,8 @@ export default function CarDisplay() {
                   : `Cr. ${carData.price}`}
               </button>
             </div>
+
+            <TechnicalData carData={carData} />
           </div>
         </>
       )}

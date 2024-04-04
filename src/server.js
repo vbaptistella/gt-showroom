@@ -24,6 +24,43 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+app.get("/brands", (req, res) => {
+  const brandFolders = fs.readdirSync(`./src/assets/models/`);
+  const brands = [];
+
+  brandFolders.forEach((brandFolder) => {
+    let brandData;
+    try {
+      const dataFile = fs.readFileSync(
+        `./src/assets/models/${brandFolder}/brand.json`
+      );
+      brandData = JSON.parse(dataFile);
+    } catch (e) {
+      brandData = { error: "data file missing" };
+    }
+    brands.push(brandData);
+  });
+
+  res.send(brands).status(200);
+});
+
+app.get("/brand/:brandId", (req, res) => {
+  const brandId = req.params.brandId;
+  let brandData;
+  console.log(brandId)
+
+  try {
+    const dataFile = fs.readFileSync(
+      `./src/assets/models/${brandId}/brand.json`
+    );
+    brandData = JSON.parse(dataFile);
+  } catch (e) {
+    brandData = { error: "data file missing" };
+  }
+
+  res.send(brandData).status(200);
+});
+
 app.get("/vehicles/:brand", (req, res) => {
   const brand = req.params.brand;
 
