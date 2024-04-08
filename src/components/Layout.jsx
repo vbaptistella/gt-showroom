@@ -69,7 +69,7 @@ export default function Layout({ brandName, carName }) {
         muted
         loop
       >
-        <source src="/src/assets/videos/bg-waves.mp4" type="video/mp4" />
+        <source src="/public/videos/bg-waves.mp4" type="video/mp4" />
       </video>
       <main>
         <Outlet />
