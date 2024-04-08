@@ -1,6 +1,8 @@
 export const brandLogos = {
   acura:
     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Acura_logo.svg/320px-Acura_logo.svg.png",
+  aston_martin:
+    "https://upload.wikimedia.org/wikipedia/en/b/bd/Aston_Martin_Lagonda_brand_logo.png",
   audi: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Audi-Logo_2016.svg/320px-Audi-Logo_2016.svg.png",
   bmw: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/240px-BMW_logo_%28gray%29.svg.png",
   dodge:

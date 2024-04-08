@@ -12,16 +12,20 @@
 .axle {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .engine {
-  height: 20px;
-  width: 15px;
+  height: 13px;
+  width: 19px;
   background: #fff;
   border-radius: 2px;
   display: none;
   &.active {
     display: block;
+  }
+  &.mid {
+    margin-bottom: 10px;
   }
 }
 
@@ -44,4 +48,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-shadow: 0 0 1px #000;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 35%,
+    rgba(0, 0, 0, 0.5) 35%,
+    rgba(0, 0, 0, 0.5) 65%,
+    transparent 65%
+  );
 }

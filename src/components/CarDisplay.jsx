@@ -3,10 +3,11 @@ import { useState, useEffect, useRef } from "react";
 import { getCarData } from "../services/carService";
 import ColourButton from "./ColourButton";
 import TechnicalData from "./TechnicalData";
+import { getBrandData } from "../services/carService";
 
 import "./styles/carDisplay.css";
 
-export default function CarDisplay({ setCarName }) {
+export default function CarDisplay({ setBrandData, setCarName }) {
   const [carId, setCarId] = useState("");
   const [brand, setBrand] = useState("");
   const [carData, setCarData] = useState({});
@@ -20,12 +21,14 @@ export default function CarDisplay({ setCarName }) {
     const brandFromUrl = window.location.pathname.split("/")[2];
     const carFromUrl = window.location.pathname.split("/")[3];
 
+    getBrandData(brandFromUrl).then((data) => setBrandData(data));
+
     setBrand(brandFromUrl);
     setCarId(carFromUrl);
     if (carId && brand) {
       getCarData(brand, carId).then((data) => {
         setCarData(data);
-        setCarName(data.name);
+        setCarName(`${data.name} ${data.version} ${data.year}`);
         setCarColourName();
       });
     }
@@ -107,6 +110,9 @@ export default function CarDisplay({ setCarName }) {
           <div className="car-data-bottom">
             <div className="car-colours-container">
               <div className="car-colours">
+                {carColourName && (
+                  <span className="car-colour-name">{carColourName}</span>
+                )}
                 <div className="car-colour-list">
                   {carData.colours.map((colour, index) => (
                     <ColourButton
@@ -117,9 +123,6 @@ export default function CarDisplay({ setCarName }) {
                       handleColourChange={handleColourChange}
                     />
                   ))}
-                  {carColourName && (
-                    <span className="car-colour-name">{carColourName}</span>
-                  )}
                 </div>
               </div>
             </div>

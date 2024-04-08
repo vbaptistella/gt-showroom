@@ -89,6 +89,8 @@ model-viewer {
 .car-colours {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
   & button {
     width: 30px;
     height: 30px;
@@ -113,6 +115,7 @@ model-viewer {
   border-radius: 50px;
   border: 1px solid #777;
   align-items: center;
+  width: fit-content;
 }
 
 .car-colour-name {
@@ -150,6 +153,7 @@ model-viewer {
   padding-right: 15px;
   justify-content: flex-start;
   display: flex;
+  font-weight: bold;
 }
 
 .data-table-cell-key {

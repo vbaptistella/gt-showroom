@@ -1,0 +1,35 @@
+{
+  "name": "Aston Martin DB6",
+  "id": "amdb6",
+  "version": "",
+  "year": 1967,
+  "engine": {
+    "displacement": "4.0",
+    "type": "I6",
+    "power": 325,
+    "torque": 9.6
+  },
+  "dimensions": {
+    "length": 4623,
+    "height": 1321,
+    "width": 1676,
+    "weight": 1550
+  },
+  "price": "38.460",
+  "drivetrain": "fr",
+  "defaultColour": 10,
+  "colours": [
+    { "name": "White", "hex": "#C0C8C0" },
+    { "name": "Silver", "hex": "#A0A0A0" },
+    { "name": "Ice Silver", "hex": "#A8B8A8" },
+    { "name": "Black", "hex": "#282828" },
+    { "name": "Beige", "hex": "#988070" },
+    { "name": "Red", "hex": "#981820" },
+    { "name": "Brown", "hex": "#483828" },
+    { "name": "Dark Red", "hex": "#702020" },
+    { "name": "Yellow", "hex": "#C0A008" },
+    { "name": "Bright Green", "hex": "#086048" },
+    { "name": "Bluish Silver", "hex": "#8898A0" },
+    { "name": "Blue", "hex": "#103048" }
+  ]
+}

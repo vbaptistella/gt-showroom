@@ -20,37 +20,18 @@ export default function LayoutIcon({ carData }) {
   };
 
   useEffect(() => {
-    if (
-      carData.drivetrain === "ff" ||
-      carData.drivetrain === "fa" ||
-      carData.drivetrain === "ma" ||
-      carData.drivetrain === "ra"
-    ) {
+    const layoutShort = Array.from(carData.drivetrain);
+    if (layoutShort[1] === "f" || layoutShort[1] === "a") {
       activeParts.w.fl = true;
       activeParts.w.fr = true;
     }
-    if (
-      carData.drivetrain === "fr" ||
-      carData.drivetrain === "fa" ||
-      carData.drivetrain === "ma" ||
-      carData.drivetrain === "ra"
-    ) {
+    if (layoutShort[1] === "r" || layoutShort[1] === "a") {
       activeParts.w.rl = true;
       activeParts.w.rr = true;
     }
-    if (
-      carData.drivetrain === "ff" ||
-      carData.drivetrain === "fr" ||
-      carData.drivetrain === "fa"
-    ) {
-      activeParts.e.f = true;
-    }
-    if (carData.drivetrain === "mr" || carData.drivetrain === "ma") {
-      activeParts.e.m = true;
-    }
-    if (carData.drivetrain === "rr" || carData.drivetrain === "ra") {
-      activeParts.e.r = true;
-    }
+
+    activeParts.e[layoutShort[0]] = true;
+
     setAp(activeParts);
   }, []);
 

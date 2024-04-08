@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import MainMenu from "./components/MainMenu";
 import BrandsMenu from "./components/BrandsMenu";
 import BrandCatalog from "./components/BrandCatalog";
+import UsedCatalog from "./components/UsedCatalog";
 import CarDisplay from "./components/CarDisplay";
 import "./App.css";
 
@@ -30,8 +31,22 @@ export default function App() {
               }
             />
             <Route
-              path="/new/:brand/:vehicle"
-              element={<CarDisplay setCarName={setCarName} />}
+              path="/used"
+              element={
+                <UsedCatalog
+                  brandData={brandData}
+                  setBrandData={setBrandData}
+                />
+              }
+            />
+            <Route
+              path="/:showroom/:brand/:vehicle"
+              element={
+                <CarDisplay
+                  setBrandData={setBrandData}
+                  setCarName={setCarName}
+                />
+              }
             />
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>

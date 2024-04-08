@@ -1,0 +1,35 @@
+{
+  "name": "RUF BTR",
+  "id": "btrt1",
+  "version": "Type I",
+  "year": 1989,
+  "engine": {
+    "displacement": "3.4",
+    "type": "H4",
+    "power": 368,
+    "torque": 44.7
+  },
+  "dimensions": {
+    "length": 4151,
+    "height": 1300,
+    "width": 1652,
+    "weight": 1190
+  },
+  "price": "350.000",
+  "drivetrain": "rr",
+  "defaultColour": 4,
+  "colours": [
+    { "name": "Ivory White", "hex": "#B8B8B0" },
+    { "name": "Bright Silver", "hex": "#909090" },
+    { "name": "Steel Grey", "hex": "#505050" },
+    { "name": "Dark Grey", "hex": "#181818" },
+    { "name": "Red", "hex": "#700810" },
+    { "name": "Yellow", "hex": "#B8A038" },
+    { "name": "Green", "hex": "#005038" },
+    { "name": "Jet Black", "hex": "#081810" },
+    { "name": "Maize Yellow", "hex": "#B8B860" },
+    { "name": "Iris Blue", "hex": "#404880" },
+    { "name": "Azure Blue", "hex": "#006098" },
+    { "name": "Navy Blue", "hex": "#081020" }
+  ]
+}

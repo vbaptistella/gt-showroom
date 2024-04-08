@@ -1,0 +1,28 @@
+{
+  "name": "Lotus Europa",
+  "id": "europ",
+  "version": "(Type 74)",
+  "year": 1971,
+  "engine": {
+    "displacement": "1.6",
+    "type": "I4",
+    "power": 125,
+    "torque": 15.2
+  },
+  "dimensions": {
+    "length": 4064,
+    "height": 1080,
+    "width": 1714,
+    "weight": 730
+  },
+  "price": "-",
+  "drivetrain": "mr",
+  "defaultColour": 4,
+  "colours": [
+    { "name": "White", "hex": "#C0C0B0" },
+    { "name": "Silver Metallic", "hex": "#989898" },
+    { "name": "Black Pearl", "hex": "#202020" },
+    { "name": "Dark Red", "hex": "#581810" },
+    { "name": "British Racing Green", "hex": "#104830" }
+  ]
+}

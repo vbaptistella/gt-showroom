@@ -19,5 +19,11 @@
   "price": "-",
   "drivetrain": "mr",
   "defaultColour": 0,
-  "colours": [{ "name": "Bordeaux Red", "hex": "#701808" }]
+  "colours": [
+    { "name": "Rosso Arancio Rally", "hex": "#80232a" },
+    { "name": "Giallo Fly", "hex": "#bfb64e" },
+    { "name": "Verde Chiaro", "hex": "#74a15c" },
+    { "name": "Azzurro", "hex": "#4c608d" },
+    { "name": "Blu", "hex": "#15162b" }
+  ]
 }
