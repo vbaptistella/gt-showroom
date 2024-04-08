@@ -20,11 +20,11 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/brands", (req, res) => {
+app.get("/api/brands", (req, res) => {
   const brandFolders = fs.readdirSync(`./src/assets/models/`);
   const brands = [];
 
@@ -44,7 +44,7 @@ app.get("/brands", (req, res) => {
   res.send(brands).status(200);
 });
 
-app.get("/brand/:brandId", (req, res) => {
+app.get("/api/brand/:brandId", (req, res) => {
   const brandId = req.params.brandId;
   let brandData;
   console.log(brandId)
@@ -61,7 +61,7 @@ app.get("/brand/:brandId", (req, res) => {
   res.send(brandData).status(200);
 });
 
-app.get("/vehicles/:brand", (req, res) => {
+app.get("/api/vehicles/:brand", (req, res) => {
   const brand = req.params.brand;
 
   const carFolders = fs.readdirSync(`./src/assets/models/${brand}`);
@@ -84,7 +84,7 @@ app.get("/vehicles/:brand", (req, res) => {
   res.send(vehicles).status(200);
 });
 
-app.get("/vehicle/:brand/:carId", (req, res) => {
+app.get("/api/vehicle/:brand/:carId", (req, res) => {
   const brand = req.params.brand;
   const carId = req.params.carId;
 
