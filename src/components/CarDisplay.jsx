@@ -43,7 +43,7 @@ export default function CarDisplay({ setBrandData, setCarName }) {
       materialList.forEach((material) => {
         modelViewer.current
           .createTexture(
-            `/src/assets/models/${brand}/${carId}/textures/${index}.png`
+            `/public/models/${brand}/${carId}/textures/${index}.png`
           )
           .then((texture) => {
             material.pbrMetallicRoughness.baseColorTexture.setTexture(texture);
@@ -89,7 +89,7 @@ export default function CarDisplay({ setBrandData, setCarName }) {
           <model-viewer
             ref={modelViewer}
             alt={carData.name}
-            src={`/src/assets/models/${brand}/${carId}/${carId}.glb`}
+            src={`/public/models/${brand}/${carId}/${carId}.glb`}
             disable-pan
             disable-zoom
             auto-rotate

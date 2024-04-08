@@ -7,7 +7,7 @@ export default function CarItem({ car, brand }) {
     <Link key={car.id} to={car.id}>
       <li className="car-item">
         <div className="car-thumb">
-          <img src={`/src/assets/models/${brand}/${car.id}/thumb.png`} />
+          <img src={`/public/models/${brand}/${car.id}/thumb.png`} />
         </div>
         <div className="car-data">
           <div>

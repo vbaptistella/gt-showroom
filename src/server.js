@@ -25,14 +25,14 @@ app.get("/api", (req, res) => {
 });
 
 app.get("/api/brands", (req, res) => {
-  const brandFolders = fs.readdirSync(`./src/assets/models/`);
+  const brandFolders = fs.readdirSync(`./public/models/`);
   const brands = [];
 
   brandFolders.forEach((brandFolder) => {
     let brandData;
     try {
       const dataFile = fs.readFileSync(
-        `./src/assets/models/${brandFolder}/brand.json`
+        `./public/models/${brandFolder}/brand.json`
       );
       brandData = JSON.parse(dataFile);
     } catch (e) {
@@ -51,7 +51,7 @@ app.get("/api/brand/:brandId", (req, res) => {
 
   try {
     const dataFile = fs.readFileSync(
-      `./src/assets/models/${brandId}/brand.json`
+      `./public/models/${brandId}/brand.json`
     );
     brandData = JSON.parse(dataFile);
   } catch (e) {
@@ -64,14 +64,14 @@ app.get("/api/brand/:brandId", (req, res) => {
 app.get("/api/vehicles/:brand", (req, res) => {
   const brand = req.params.brand;
 
-  const carFolders = fs.readdirSync(`./src/assets/models/${brand}`);
+  const carFolders = fs.readdirSync(`./public/models/${brand}`);
   const vehicles = [];
 
   carFolders.forEach((carFolder) => {
     let carData;
     try {
       carData = fs.readFileSync(
-        `./src/assets/models/${brand}/${carFolder}/data.json`,
+        `./public/models/${brand}/${carFolder}/data.json`,
         { encoding: "utf8", flag: "r" }
       );
       vehicles.push(JSON.parse(carData));
@@ -89,7 +89,7 @@ app.get("/api/vehicle/:brand/:carId", (req, res) => {
   const carId = req.params.carId;
 
   const carData = fs.readFileSync(
-    `./src/assets/models/${brand}/${carId}/data.json`,
+    `./public/models/${brand}/${carId}/data.json`,
     { encoding: "utf8", flag: "r" }
   );
   console.log(carData);
