@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const baseUrl = import.meta.env.BACKEND_URL;
+const baseUrl = import.meta.env.VITE_BACKEND_URL;
 
 export function getBrands() {
   return new Promise((resolve, reject) => {
     axios({
       method: "get",
-      url: `/brands/`,
+      url: `${baseUrl}/api/brands/`,
     })
       .then(function (response) {
         resolve(response.data);
@@ -22,7 +22,7 @@ export function getBrandData(brandId) {
   return new Promise((resolve, reject) => {
     axios({
       method: "get",
-      url: `${baseUrl}/brand/${brandId}`,
+      url: `${baseUrl}/api/brand/${brandId}`,
     })
       .then(function (response) {
         resolve(response.data);
@@ -38,7 +38,7 @@ export function getCarsFromBrand(brand) {
   return new Promise((resolve, reject) => {
     axios({
       method: "get",
-      url: `${baseUrl}/vehicles/${brand}`,
+      url: `${baseUrl}/api/vehicles/${brand}`,
     })
       .then(function (response) {
         resolve(response.data);
@@ -54,7 +54,7 @@ export function getCarData(brand, carId) {
   return new Promise((resolve, reject) => {
     axios({
       method: "get",
-      url: `${baseUrl}/vehicle/${brand}/${carId}`,
+      url: `${baseUrl}/api/vehicle/${brand}/${carId}`,
     })
       .then(function (response) {
         resolve(response.data);

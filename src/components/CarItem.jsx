@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 
 import { Link } from "react-router-dom";
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 export default function CarItem({ car, brand }) {
+  console.log(backendUrl)
   return (
     <Link key={car.id} to={car.id}>
       <li className="car-item">
         <div className="car-thumb">
-          <img src={`/public/models/${brand}/${car.id}/thumb.png`} />
+          <img src={`${backendUrl}/models/${brand}/${car.id}/thumb.png`} />
         </div>
         <div className="car-data">
           <div>

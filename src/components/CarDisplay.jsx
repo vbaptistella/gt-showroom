@@ -7,6 +7,8 @@ import { getBrandData } from "../services/carService";
 
 import "./styles/carDisplay.css";
 
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
+
 export default function CarDisplay({ setBrandData, setCarName }) {
   const [carId, setCarId] = useState("");
   const [brand, setBrand] = useState("");
@@ -43,7 +45,7 @@ export default function CarDisplay({ setBrandData, setCarName }) {
       materialList.forEach((material) => {
         modelViewer.current
           .createTexture(
-            `/public/models/${brand}/${carId}/textures/${index}.png`
+            `${backendUrl}/models/${brand}/${carId}/textures/${index}.png`
           )
           .then((texture) => {
             material.pbrMetallicRoughness.baseColorTexture.setTexture(texture);
@@ -89,7 +91,7 @@ export default function CarDisplay({ setBrandData, setCarName }) {
           <model-viewer
             ref={modelViewer}
             alt={carData.name}
-            src={`/public/models/${brand}/${carId}/${carId}.glb`}
+            src={`${backendUrl}/models/${brand}/${carId}/${carId}.glb`}
             disable-pan
             disable-zoom
             auto-rotate
