@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 export default function CarItem({ car, brand }) {
-  console.log(backendUrl)
   return (
     <Link key={car.id} to={car.id}>
       <li className="car-item">
