@@ -97,6 +97,20 @@ main {
   color: #fff;
 }
 
+
+.gt-logo {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & img {
+    height: 100%;
+  }
+}
+
 .about-button {
   margin-left: auto;
   display: flex;

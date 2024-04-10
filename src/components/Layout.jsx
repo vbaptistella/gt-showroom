@@ -62,6 +62,9 @@ export default function Layout({ brandName, carName }) {
             </div>
           </>
         )}
+        <div className="gt-logo">
+          <img src="/public/img/gtlogo.png" />
+        </div>
         <button
           className="about-button ui-button"
           onClick={() => setAboutModal(true)}
