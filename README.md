@@ -1,8 +1,7 @@
-# React + Vite
+# GT2 Showroom
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a website where you can view the 3D car models from the 1999 Playstation game Gran Turismo 2
 
-Currently, two official plugins are available:
+Access it at [text](https://gt-showroom.onrender.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with React, Javascript, HTML and CSS
