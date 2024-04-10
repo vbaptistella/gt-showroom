@@ -63,7 +63,7 @@ export default function Layout({ brandName, carName }) {
           </>
         )}
         <div className="gt-logo">
-          <img src="/public/img/gtlogo.png" />
+          <img src="/img/gtlogo.png" />
         </div>
         <button
           className="about-button ui-button"
