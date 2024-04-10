@@ -13,11 +13,11 @@ export default function MainMenu() {
         Used Cars<i>Coming soon</i>
       </div>
       {/* </Link> */}
-      {/* <Link to={`/classic`}> */}
-      <div className="card-button disabled">
+      {/* <Link to={`/classic`}> */
+      /* <div className="card-button disabled">
         Classic Cars<i>Coming soon</i>
-      </div>
-      {/* </Link> */}
+      </div> */
+      /* </Link> */}
     </div>
   );
 }

@@ -16,6 +16,8 @@ export const brandLogos = {
     "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Lotus_Cars_logo.svg/240px-Lotus_Cars_logo.svg.png",
   mazda:
     "https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Mazda_logo_with_emblem.svg/227px-Mazda_logo_with_emblem.svg.png",
+  nissan:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Nissan_2020_logo.svg/287px-Nissan_2020_logo.svg.png",
   peugeot:
     "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Peugeot_Logo.svg/219px-Peugeot_Logo.svg.png",
   plymouth:
