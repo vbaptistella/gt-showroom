@@ -83,10 +83,85 @@ main {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    display: none;
+  }
+}
+
 .breadcrumb-stage {
   background-color: transparent;
   display: flex;
   align-items: center;
   height: 40px;
   color: #fff;
+}
+
+.about-button {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  & .material-icons {
+    margin-right: 5px;
+  }
+}
+
+.about-modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-modal-content {
+  position: relative;
+  width: 80vw;
+  height: fit-content;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2001;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(60px);
+  border: 1px solid #777;
+  border-radius: 10px;
+  & a {
+    color: rgba(43, 130, 230, 1);
+    &:hover {
+      color: rgba(73, 160, 260, 1);
+    }
+  }
+}
+
+.close-modal {
+  position: relative;
+  color: #fff;
+  &:hover {
+    color: rgba(43, 130, 230, 1);
+  }
+}
+
+.ui-button {
+  color: #fff;
+  background: rgba(128, 128, 128, 0.2);
+  border: 2px solid transparent;
+  transition: 0.5s ease;
+  backdrop-filter: blur(20px);
+  &:hover {
+    color: #fff;
+    background: rgba(69, 121, 167, 0.5);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(79, 126, 136);
+    border-image: initial;
+    transition: all 0.5s ease 0s;
+  }
 }

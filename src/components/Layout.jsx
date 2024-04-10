@@ -3,10 +3,12 @@ import { useState, useEffect, useRef } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
 
 import "./styles/layout.css";
+import AboutModal from "./AboutModal";
 
 export default function Layout({ brandName, carName }) {
   const [parentPath, setParentPath] = useState("");
   const [path, setPath] = useState([]);
+  const [aboutModal, setAboutModal] = useState(false);
   const location = useLocation();
 
   const bgVideoRef = useRef();
@@ -60,6 +62,12 @@ export default function Layout({ brandName, carName }) {
             </div>
           </>
         )}
+        <button
+          className="about-button ui-button"
+          onClick={() => setAboutModal(true)}
+        >
+          <span className="material-icons">info</span>About
+        </button>
       </div>
       <video
         ref={bgVideoRef}
@@ -72,6 +80,7 @@ export default function Layout({ brandName, carName }) {
         <source src="/videos/bg-waves.mp4" type="video/mp4" />
       </video>
       <main>
+        {aboutModal && <AboutModal setAboutModal={setAboutModal} />}
         <Outlet />
       </main>
     </>
