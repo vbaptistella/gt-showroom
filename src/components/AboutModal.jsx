@@ -6,12 +6,13 @@ export default function AboutModal({ setAboutModal }) {
         <div className="about-modal-content">
           <h1>Gran Turismo 2 Showroom</h1>
           <p>
-            This is a website where you can view the 3D car models from the{" "}
+            This is a website where you can view 3D car models from the 1999
+            Playstation game,{" "}
             <a
               target="_blank"
               href="https://en.wikipedia.org/wiki/Gran_Turismo_2"
             >
-              1999 Playstation game Gran Turismo 2
+              Gran Turismo 2
             </a>
           </p>
           <p>
@@ -23,7 +24,7 @@ export default function AboutModal({ setAboutModal }) {
             <a target="_blank" href="https://github.com/vbaptistella/">
               vbaptistella
             </a>{" "}
-            with React, Javascript, HTML and CSS
+            with React, Javascript, HTML, CSS, model-viewer and three.js
           </p>
           <p>
             <a target="_blank" href="https://github.com/vbaptistella/">
