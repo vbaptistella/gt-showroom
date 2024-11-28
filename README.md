@@ -1,6 +1,6 @@
 # GT2 Showroom
 
-This is a hobby web-based application I developed to view 3D car models from the 1999 Playstation game Gran Turismo 2
+This is a web-based application to view 3D car models from the 1999 Playstation game Gran Turismo 2
 
 ![Demo Picture](public/img/demo1.png)
 
