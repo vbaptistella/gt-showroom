@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from "react";
 import { getCarData } from "../services/carService";
 import ColourButton from "./ColourButton";
@@ -16,6 +15,7 @@ export default function CarDisplay({ setBrandData, setCarName }) {
   const [carColourId, setCarColourId] = useState(0);
   const [isInitialColour, setIsInitialColour] = useState(false);
   const [carColourName, setCarColourName] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const modelViewer = useRef(null);
 
@@ -34,6 +34,7 @@ export default function CarDisplay({ setBrandData, setCarName }) {
         setCarColourName();
       });
     }
+    setLoading(false);
   }, [brand, carId]);
 
   const handleColourChange = (index) => {
@@ -76,7 +77,7 @@ export default function CarDisplay({ setBrandData, setCarName }) {
   };
 
   return (
-    <>
+    <div className={`car-display ${!loading && "active"}`}>
       {carData.name && (
         <>
           <div className="car-viewer-data-container">
@@ -112,9 +113,9 @@ export default function CarDisplay({ setBrandData, setCarName }) {
           <div className="car-data-bottom">
             <div className="car-colours-container">
               <div className="car-colours">
-                {carColourName && (
-                  <span className="car-colour-name">{carColourName}</span>
-                )}
+                <span className="car-colour-name">
+                  {carColourName ? carColourName : ""}
+                </span>
                 <div className="car-colour-list">
                   {carData.colours.map((colour, index) => (
                     <ColourButton
@@ -143,6 +144,6 @@ export default function CarDisplay({ setBrandData, setCarName }) {
           </div>
         </>
       )}
-    </>
+    </div>
   );
 }

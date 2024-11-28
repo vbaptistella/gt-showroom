@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { brandLogos } from "../assets/data/brandLogos";
 import "./styles/mapIcon.css";
 

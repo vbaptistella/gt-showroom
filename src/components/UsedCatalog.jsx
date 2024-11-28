@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import { getCarsFromBrand } from "../services/carService";
 import CarItem from "./CarItem";
